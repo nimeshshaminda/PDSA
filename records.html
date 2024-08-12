@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="Stylesheet" href="css/records.css">
+    <title>Student Records</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="head-bar">
+                <div class="undo-btn"><i class="ri-arrow-left-circle-line"></i></div>
+                <div class="head-name">
+                    <h1>Student Records</h1>
+                </div>
+                <div class="Table-logo"><img src="assets/nibm_logo.jpg" alt="logo img"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="table-top">
+            <div class="add-option">
+                <button type="button" class="btn-add" onclick="openPopup()">Add Student</button>
+                <div class="popup" id="popup">
+                    <div class="st-top">
+                        <h1 id="popup-title">Add Student Records</h1>
+                    </div>
+                    <div class="st-bottom">
+                        <div class="st-right">
+                            <div class="personal-det1">
+                                <p>Index No</p><input type="text" id="studentIndex">
+                            </div>
+                            <div class="personal-det2">
+                                <p>Programme</p><input type="text" id="studentProgram">
+                            </div>
+                            <div class="personal-det3">
+                                <p>Name</p><input type="text" id="studentName">
+                            </div>
+                        </div>
+                        <div class="st-left">
+                            <div class="other-det">
+                                <P>Modules</P>
+                                <div id="modulesContainer">
+                                    <div class="moduleGradePair">
+                                        <input type="text" placeholder="Module Name" class="moduleName">
+                                        <input type="text" placeholder="Grade" class="moduleGrade">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="other-det3">
+                                <button type="button" class="btn-add-mod"  onclick="addModule()">Add Another Module</button>
+                            </div>
+                            <div>
+                                <button type="button" id="popupBtn" class="add">ADD</button>
+                                <button type="button" class="add" onclick="closePopup()">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="select-programe">
+                <div class="pselect-btn">
+                    <span class="pbtn-text">Select a Programme</span>
+                    <i class="ri-arrow-drop-down-line"></i>
+                </div>
+
+                <ul class="p-options">
+                    <li class="option">
+                        <span class="ptext-option">Higher Diploma In SE</span>
+                    </li>
+                    <li class="option">
+                        <span class="ptext-option">Higher Diploma in Management</span>
+                    </li>
+                    <li class="option">
+                        <span class="ptext-option">Higher National Diploma in ISM</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="table-bottom">
+            <table class="Students-table">
+                <thead>
+                    <tr>
+                        <th class="table-id">ID</th>
+                        <th>Index No</th>
+                        <th>Name</th>
+                        <th>Programme</th>
+                        <th>Option</th>
+                    </tr>
+                </thead>
+                <tbody id="studentList">
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script defer src="js/records.js"></script>
+    <script src="js/bst.js"></script>
+</body>
+
+</html>

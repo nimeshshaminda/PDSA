@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Arimo:ital,wght@0,400..700;1,400..700&family=Bebas+Neue&family=Fjalla+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Mate:ital@0;1&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Arimo:ital,wght@0,400..700;1,400..700&family=Bebas+Neue&family=Fjalla+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Mate:ital@0;1&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mukta:wght@200;300;400;500;600;700;800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Arimo:ital,wght@0,400..700;1,400..700&family=Bebas+Neue&family=Fjalla+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Mate:ital@0;1&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Arimo:ital,wght@0,400..700;1,400..700&family=Bebas+Neue&family=Fjalla+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Mate:ital@0;1&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Arimo:ital,wght@0,400..700;1,400..700&family=Bebas+Neue&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fjalla+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Mate:ital@0;1&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+
+
+* {
+    margin: 0;
+  }
+  
+  .Table-logo img {
+    height: 62px;
+    width: auto;
+  }
+  
+  .head-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 8px;
+  }
+  
+  .undo-btn {
+    padding-right: 15%;
+  }
+  
+  .head-name {
+    padding-left: 20%;
+    font-family: "Fira Sans Condensed", sans-serif;
+    color: #020d16;
+  }
+  
+  /*table top*/
+  
+  .Table-logo {
+    padding-left: 20%;
+  }
+  .undo-btn .ri-arrow-left-circle-line {
+    color: #707070;
+    font-size: 30px;
+  }
+  
+  .table-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  /*add student*/
+  
+  .btn-add {
+    text-decoration: none;
+    font-family: "Mukta", sans-serif;
+    font-family: 300;
+    color: black;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: #aac8e0;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .add-option {
+    padding-left: 10%;
+  }
+  
+  .popup {
+    width: 700px;
+    height: 250px;
+    background: #ebeaea;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #161616;
+    z-index: 1000;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+  }
+  
+  .open-popup {
+    display: block;
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .st-top {
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+    font-family: "Fira Sans Condensed", sans-serif;
+  }
+  
+  .st-bottom {
+    display: flex;
+  }
+  
+  .st-right {
+    width: 50%;
+    padding-top: 30px;
+    align-items: center;
+    padding-left: 20px;
+  }
+  
+  .st-left {
+    width: 50%;
+  }
+  .st-bottom .st-right .personal-det1,
+  .st-bottom .st-right .personal-det2,
+  .st-bottom .st-right .personal-det3 {
+    display: flex;
+    align-items: center;
+    padding-bottom: 13px;
+  }
+  
+  .st-bottom .st-right p {
+    padding-right: 9px;
+    padding-top: 5px;
+    font-weight: bold;
+    font-family: "Mukta", sans-serif;
+  }
+  
+  .st-bottom .st-right input {
+    height: 20px;
+    width: auto;
+  }
+  
+  .st-left .other-det {
+    display: flex;
+  }
+  
+  .st-left .other-det p {
+    padding: 10px 50px;
+    align-items: center;
+    font-weight: bold;
+    font-family: "Mukta", sans-serif;
+  }
+  
+  .st-left .other-det1,
+  .st-left .other-det2 {
+    display: flex;
+    padding: 5px 10px;
+  }
+  
+  .st-left .other-det1 .grade,
+  .st-left .other-det2 .grade {
+    width: 70px;
+    height: 20px;
+    margin-left: 10px;
+  }
+  
+  .st-left .other-det1 .module,
+  .st-left .other-det2 .module {
+    height: 20px;
+  }
+  
+  .st-left .btn-add-mod {
+    border: none;
+    padding: 5px 10px 5px 10px;
+    background-color: #2f3b72;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    border-radius: 7px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .st-left .add {
+    border: none;
+    padding: 8px 12px 8px 12px;
+    background-color: #aac8e0;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  /*drop down option*/
+  .select-programe {
+    width: 300px;
+    margin: 10px auto;
+    padding-left: 30%;
+    font-family: sans-serif;
+  }
+  
+  .select-programe .pselect-btn {
+    display: flex;
+    height: 10px;
+    background-color: #e2e2e2;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 100;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pselect-btn i {
+    font-size: 14px;
+    align-items: center;
+  }
+  
+  .select-programe .p-options {
+    position: relative;
+    padding: 10px;
+    background-color: #f3f3f3;
+    margin-top: 10px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  
+  .select-programe.active .p-options {
+    display: block;
+  }
+  
+  .select-programe {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .select-programe.active {
+    position: absolute;
+    z-index: 1000;
+  }
+  .p-options .option {
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    border-radius: 2px;
+    align-items: center;
+    background-color: #ffffff;
+  }
+  
+  .option:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .option .ptext-option {
+    font-size: 14px;
+    align-items: center;
+  }
+  
+  /*table data*/
+  .Students-table {
+    border-collapse: collapse;
+    margin: 25px 0 50px 50px;
+    min-width: 100px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: sticky;
+  }
+  
+  .Students-table thead tr {
+    font-size: 1em;
+    background-color: #17598f;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    font-family: "Mukta", sans-serif;
+  }
+  
+  .Students-table th,
+  .Students-table td {
+    padding: 10px 40px;
+  }
+  
+  .Students-table td i {
+    padding: 9px;
+  }
+  
+  .Students-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    font-family: "Inter", sans-serif;
+    font-size: 0.9em;
+  }
+  
+  .Students-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+
+  .butto {
+    cursor: pointer;
+  }
