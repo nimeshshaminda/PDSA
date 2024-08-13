@@ -6,6 +6,20 @@ let popupBtn = document.getElementById("popupBtn");
 
 let editingRow = null;
 
+function formatProgram(programCode) {
+    switch (programCode) {
+        case 'hdse':
+            return 'Higher Diploma in Software Engineering';
+        case 'dse':
+            return 'Diploma in Software Engineering';
+        case 'dis':
+            return 'Diploma in Information Systems Management';
+        default:
+            return 'Unknown Program';
+    }
+}
+
+
 function prepareModuleDistributionData(students) {
     const moduleRanges = {};
 
@@ -200,6 +214,39 @@ function displayStudents(filterProgramme = 'all') {
                         </tr>`;
             studentListTable.insertAdjacentHTML('beforeend', row);
         }
+    });
+}
+
+
+function searchStudent() {
+    const searchInput = document.getElementById('search').value.toLowerCase();
+    const filteredStudents = bst.inorder().filter(student => 
+        student.index.toLowerCase().includes(searchInput)
+    );
+
+    displayFilteredStudents(filteredStudents);
+}
+
+function displayFilteredStudents(students) {
+    const studentList = document.getElementById('studentList');
+    studentList.innerHTML = ''; // Clear existing students
+
+    students.forEach((student, index) => {
+        const studentRow = document.createElement('tr');
+        studentRow.innerHTML = `
+            <td class="table-id">${index + 1}</td>
+            <td>${student.index}</td>
+            <td>${student.name}</td>
+            <td>${formatProgram(student.program)}</td>
+            <td>
+                                 <a href="student-details.html?id=${student.id}">
+                                    <i class="ri-eye-fill"></i>
+                                </a>
+                                <i class="ri-pencil-fill butto" onclick="editRow(this)"></i>
+                                <i class="ri-delete-bin-2-fill butto" onclick="deleteRow(this)"></i>
+                            </td>
+        `;
+        studentList.appendChild(studentRow);
     });
 }
 
