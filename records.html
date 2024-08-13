@@ -10,10 +10,13 @@
 </head>
 
 <body>
+    <div class="overlay"></div>
     <header>
         <div class="container">
             <div class="head-bar">
-                <div class="undo-btn"><i class="ri-arrow-left-circle-line"></i></div>
+                <div class="undo-btn butto" onclick="window.location.href='index.html';">
+                    <i class="ri-arrow-left-circle-line"></i>
+                </div>
                 <div class="head-name">
                     <h1>Student Records</h1>
                 </div>
@@ -24,6 +27,13 @@
 
     <main>
         <section class="table-top">
+            <div id="confirmModal" class="modal">
+                <div class="modal-content">
+                    <p>Do you really want to remove this student?</p>
+                    <button id="confirmYes" class="btn">Yes</button>
+                    <button id="confirmNo" class="btn">No</button>
+                </div>
+            </div>            
             <div class="add-option">
                 <button type="button" class="btn-add" onclick="openPopup()">Add Student</button>
                 <div class="popup" id="popup">
@@ -36,7 +46,12 @@
                                 <p>Index No</p><input type="text" id="studentIndex">
                             </div>
                             <div class="personal-det2">
-                                <p>Programme</p><input type="text" id="studentProgram">
+                                <p>Programme</p>
+                                <select class="selector" name="studentProgram" id="studentProgram">
+                                    <option value="hdse">Higher Diploma in SE</option>
+                                    <option value="dse">Diploma in SE</option>
+                                    <option value="dis">Diploma in ISM</option>
+                                </select>
                             </div>
                             <div class="personal-det3">
                                 <p>Name</p><input type="text" id="studentName">
@@ -65,22 +80,12 @@
             </div>
 
             <div class="select-programe">
-                <div class="pselect-btn">
-                    <span class="pbtn-text">Select a Programme</span>
-                    <i class="ri-arrow-drop-down-line"></i>
-                </div>
-
-                <ul class="p-options">
-                    <li class="option">
-                        <span class="ptext-option">Higher Diploma In SE</span>
-                    </li>
-                    <li class="option">
-                        <span class="ptext-option">Higher Diploma in Management</span>
-                    </li>
-                    <li class="option">
-                        <span class="ptext-option">Higher National Diploma in ISM</span>
-                    </li>
-                </ul>
+                <select class="selector" name="programme" id="programme" onchange="filterProgramme()">
+                    <option value="all">All Programmes</option>
+                    <option value="hdse">Higher Diploma in SE</option>
+                    <option value="dse">Diploma in SE</option>
+                    <option value="dis">Diploma in ISM</option>
+                </select>
             </div>
         </section>
 
@@ -101,7 +106,13 @@
         </section>
     </main>
 
+    <div id="chartsContainer">
+        <!-- Charts will be dynamically added here -->
+    </div>
+
+
     <script defer src="js/records.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/bst.js"></script>
 </body>
 

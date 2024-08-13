@@ -1,0 +1,127 @@
+.Table-logo img {
+  height: 62px;
+  width: auto;
+}
+
+.head-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 8px;
+}
+
+.undo-btn {
+  padding-right: 15%;
+  cursor: pointer;
+}
+
+.head-name {
+  padding-left: 20%;
+  font-family: "Fira Sans Condensed", sans-serif;
+  color: #020d16;
+}
+
+
+.Table-logo {
+  padding-left: 20%;
+}
+.undo-btn .ri-arrow-left-circle-line {
+  color: #707070;
+  font-size: 30px;
+}
+
+.table-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+main {
+  padding-top: 40px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+#studentDetails {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#studentDetails h2 {
+    font-size: 24px;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#studentDetails p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+#studentDetails strong {
+    color: #555;
+}
+
+#studentDetails h3 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#studentDetails #chartContainer {
+    margin-top: 20px;
+}
+
+#studentDetails canvas {
+    width: 100% !important; /* Ensures the chart uses the full width of the container */
+    height: auto !important; /* Adjusts the height based on the width to maintain aspect ratio */
+    max-width: 100%; /* Prevents the chart from exceeding the container width */
+    border: 1px solid #ddd; /* Optional: adds a border around the canvas */
+    border-radius: 4px; /* Optional: rounds the corners of the border */
+}
+
+.modules-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.module-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    flex: 1 1 calc(50% - 15px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.module-card h4 {
+    font-size: 18px;
+    color: #333;
+    margin: 0 0 5px;
+}
+
+.module-card p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}

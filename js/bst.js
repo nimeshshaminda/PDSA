@@ -50,19 +50,29 @@ class BST {
             console.error(`Student with ID ${id} not found.`);
         }
     }
-    
-    
+   
+    find(id) {
+        return this._findRec(this.root, id);
+    }
 
-    // Find a student by ID
-    find(id, node = this.root) {
-        if (node === null) {
+    _findRec(root, id) {
+        if (root === null) {
             return null;
-        } else if (id < node.student.id) {
-            return this.find(id, node.left);
-        } else if (id > node.student.id) {
-            return this.find(id, node.right);
+        }
+        if (id === root.student.id) {
+            return root;
+        } else if (id < root.student.id) {
+            return this._findRec(root.left, id);
         } else {
-            return node;
+            return this._findRec(root.right, id);
+        }
+    }
+
+    inorders(node = this.root, callback) {
+        if (node !== null) {
+            this.inorder(node.left, callback);
+            callback(node.student);
+            this.inorder(node.right, callback);
         }
     }
 
@@ -94,7 +104,6 @@ class BST {
         } else if (id > node.student.id) {
             node.right = this.removeNode(node.right, id);
         } else {
-            // Node to be deleted found
             if (node.left === null && node.right === null) {
                 return null;
             }
