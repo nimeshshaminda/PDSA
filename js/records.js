@@ -229,7 +229,7 @@ function searchStudent() {
 
 function displayFilteredStudents(students) {
     const studentList = document.getElementById('studentList');
-    studentList.innerHTML = ''; // Clear existing students
+    studentList.innerHTML = ''; 
 
     students.forEach((student, index) => {
         const studentRow = document.createElement('tr');
